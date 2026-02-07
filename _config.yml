@@ -9,3 +9,14 @@ plugins:
 kramdown:
   parse_block_html: true
   smart_quotes: ["apos", "apos", "quot", "quot"]
+
+baseurl: ""
+url: "https://21hoss.github.io"
+
+header_pages:
+  - index.md
+  - writeups.md
+  - research.md
+  - blog.md
+  - projects.md
+  - about.md
