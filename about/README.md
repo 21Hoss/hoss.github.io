@@ -8,7 +8,6 @@ description: All about ME!
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelvin Muhoro - Cybersecurity Specialist | Hacker Portfolio</title>
     <style>
-        /* Hacker-themed styles: Dark cyberpunk vibe with green accents, terminal-like font, subtle glows and animations */
         body {
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
@@ -205,9 +204,7 @@ description: All about ME!
     </style>
 </head>
 <body>
-    <!-- Matrix rain background canvas -->
     <canvas id="matrix"></canvas>
-
     <div class="container">
         <header>
             <h1 class="typing">Kelvin Muhoro</h1>
@@ -219,7 +216,6 @@ description: All about ME!
                 <a href="https://linkedin.com/in/kelvinmuhoro" target="_blank">linkedin.com/in/kelvinmuhoro</a>
             </div>
         </header>
-
         <section>
             <h2>Professional Experience</h2>
             <div class="job">
@@ -252,7 +248,6 @@ description: All about ME!
                 </ul>
             </div>
         </section>
-
         <section>
             <h2>Education</h2>
             <div class="job">
@@ -266,7 +261,6 @@ description: All about ME!
                 <span class="job-date">09/2024 - Present</span>
             </div>
         </section>
-
         <section>
             <h2>Courses</h2>
             <div class="job">
@@ -283,7 +277,6 @@ description: All about ME!
                 </ul>
             </div>
         </section>
-
         <section>
             <h2>Skills</h2>
             <div class="skills">
@@ -296,7 +289,6 @@ description: All about ME!
                 <span class="skill">Strong Communication Skills</span>
             </div>
         </section>
-
         <section>
             <h2>Projects</h2>
             <div class="job">
@@ -324,7 +316,6 @@ description: All about ME!
                 </ul>
             </div>
         </section>
-
         <section>
             <h2>Achievements</h2>
             <ul>
@@ -334,7 +325,6 @@ description: All about ME!
                 <li>Security Tools Mastery: Proficient with Burp Suite, Nmap, ffuf, and others.</li>
             </ul>
         </section>
-
         <section>
             <h2>Languages</h2>
             <div class="languages">
@@ -342,7 +332,6 @@ description: All about ME!
                 <span class="language">Swahili: Full Professional Proficiency</span>
             </div>
         </section>
-
         <section>
             <h2>Interests</h2>
             <div class="interests">
@@ -353,44 +342,34 @@ description: All about ME!
             </div>
         </section>
     </div>
-
     <!-- JavaScript for Matrix rain effect -->
     <script>
         const canvas = document.getElementById('matrix');
         const ctx = canvas.getContext('2d');
-
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+-=[]{}|;:,.<>?'.split('');
         const fontSize = 14;
         const columns = canvas.width / fontSize;
-
         const drops = [];
         for (let x = 0; x < columns; x++) {
             drops[x] = 1;
         }
-
         function draw() {
             ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-
             ctx.fillStyle = '#0f0';
             ctx.font = fontSize + 'px monospace';
-
             for (let i = 0; i < drops.length; i++) {
                 const text = chars[Math.floor(Math.random() * chars.length)];
                 ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
                 if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
                     drops[i] = 0;
                 }
                 drops[i]++;
             }
         }
-
         setInterval(draw, 50);
-
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
