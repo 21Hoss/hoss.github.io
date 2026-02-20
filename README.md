@@ -20,13 +20,14 @@ After it wraps on May 9, I'll publish comprehensive writeups to share lessons le
 ### Last Update: February 20, 2026 (GMT+3)
 
 * * *
+
 - Writeups
-    - [Writeup 1](https://21hoss.github.io/), February 20, 2026
-    - [Writeup 2](https://21hoss.github.io/), February 20, 2026
+    [Writeup 1](https://21hoss.github.io/), February 20, 2026
+    [Writeup 2](https://21hoss.github.io/), February 20, 2026
 
 * * *
 
-- Research 1:
+- Research1
     - Authentication & Session Management Vulnerabilities
           1. Broken authentication flows (credential stuffing, weak password policies, account enumeration)
           2. Session token entropy and predictability
@@ -39,9 +40,9 @@ After it wraps on May 9, I'll publish comprehensive writeups to share lessons le
 Methodology: Follow OWASP Testing Guide (OTG-AUTHN) and the OWASP Authentication Cheat Sheet. Document each test case, expected vs. actual behavior, and business impact.
 Tools to use: Burp Suite Pro, ffuf, jwt_tool, Hydra (controlled environments only)
 
-- Research 2:
+- Research2
     - Business Logic & API Abuse Vulnerabilities
-          1. Race conditions
+          i) Race conditions
           2. Insecure Direct Object References (IDOR)
           3. API rate limiting failures
           4. Parameter tampering
