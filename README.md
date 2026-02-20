@@ -28,7 +28,7 @@ After it wraps on May 9, I'll publish comprehensive writeups to share lessons le
 
 - Research 1:
     - Authentication & Session Management Vulnerabilities
-      <ol type="i">
+      <ol style="list-style-type: lower-roman;">
           <li>Broken authentication flows (credential stuffing, weak password policies, account enumeration)</li>
           <li>Session token entropy and predictability</li>
           <li>JWT (JSON Web Token) misconfigurations — algorithm confusion attacks (e.g., RS256 → HS256), weak secrets, missing expiry validation</li>
@@ -43,7 +43,7 @@ Tools to use: Burp Suite Pro, ffuf, jwt_tool, Hydra (controlled environments onl
 - Research 2:
     - Business Logic & API Abuse Vulnerabilities
  
-      <ol type="i">
+      <ol style="list-style-type: lower-roman;">
           <li>Race conditions</li>
           <li>Insecure Direct Object References (IDOR)</li>
           <li>API rate limiting failures</li>
