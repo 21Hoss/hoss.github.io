@@ -28,13 +28,14 @@ After it wraps on May 9, I'll publish comprehensive writeups to share lessons le
 
 - Research 1:
     - Authentication & Session Management Vulnerabilities
-
-      1. Broken authentication flows (credential stuffing, weak password policies, account enumeration)
-      2. Session token entropy and predictability
-      3. JWT (JSON Web Token) misconfigurations — algorithm confusion attacks (e.g., RS256 → HS256), weak secrets, missing expiry validation
-      4. Multi-factor authentication bypass techniques
-      5. Password reset flow weaknesses (token reuse, no expiry, host header injection)
-      6. OAuth 2.0 implementation flaws (open redirect, CSRF on authorization endpoint, token leakage)
+      <ol type="i">
+          <li>Broken authentication flows (credential stuffing, weak password policies, account enumeration)</li>
+          <li>Session token entropy and predictability</li>
+          <li>JWT (JSON Web Token) misconfigurations — algorithm confusion attacks (e.g., RS256 → HS256), weak secrets, missing expiry validation</li>
+          <li>Multi-factor authentication bypass techniques</li>
+          <li>Password reset flow weaknesses (token reuse, no expiry, host header injection)</li>
+          <li>OAuth 2.0 implementation flaws (open redirect, CSRF on authorization endpoint, token leakage)</li>
+      </ol>
 
 Methodology: Follow OWASP Testing Guide (OTG-AUTHN) and the OWASP Authentication Cheat Sheet. Document each test case, expected vs. actual behavior, and business impact.
 Tools to use: Burp Suite Pro, ffuf, jwt_tool, Hydra (controlled environments only)
@@ -42,10 +43,12 @@ Tools to use: Burp Suite Pro, ffuf, jwt_tool, Hydra (controlled environments onl
 - Research 2:
     - Business Logic & API Abuse Vulnerabilities
  
-      1. Race conditions 
-      2. Insecure Direct Object References (IDOR)
-      3. API rate limiting failures
-      4. Parameter tampering
+      <ol type="i">
+          <li>Race conditions</li>
+          <li>Insecure Direct Object References (IDOR)</li>
+          <li>API rate limiting failures</li>
+          <li>Parameter tampering</li>
+      </ol>
 
 Methodology: Map all API endpoints through proxied traffic, then systematically test each for logic flaws using both authenticated and unauthenticated sessions. Focus on multi-step workflows.
 
